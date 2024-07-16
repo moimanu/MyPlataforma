@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="img/icones/icone.ico"/>
+    <title>Plataforma</title>
+</head>
+<body>    
+
+    <section id="loading" style="height: 100%; top: 0px; width: 100vw; position: absolute; z-index: 200; background-color: white; display: none; flex-direction: column; align-items: center; justify-content: center;">
+        <h1 style="color: #cccccc;">Entrando<h1>
+        <img style="height: 100px;" src="img/geral/loading.gif">
+    </section>
+
+    <section id="alerta_inicial" style="height: 100%; top: 0px; width: 100vw; position: fixed; z-index: 100; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="padding: 30px; margin: 15px;">
+            <h1 style="color: #111; text-wrap: balance;">Para prosseguir, simule um cadastro.<h1>
+            <p style="color: #111; text-wrap: balance;">As informações não importam, pois ficam salvas no seu navegador...</p>
+            <button id="fechar_alerta_inicial" style="color: #ffffff; font-weight: bold; padding: 10px 16px; font-size: 16px; background-color: #111; border: none; border-radius: 15px;">Prosseguir</button>
+        </div>
+    </section>
+
+    <div class="barra_status_cadastro">
+        <div class="preenchimento_barra_status_cadastro"></div>
+    </div>
+
+    <form class="formulario_cadastro">
+
+        <img class="logo_plataforma" src="img/geral/logoPlataforma.png">
+
+        <div class="box_formulario" id="tela_login">
+            <label for="input_username_login">Apelido:</label>
+            <input type="text" placeholder="Digite o seu apelido..." id="input_username_login">
+
+            <label for="input_senha">Senha:</label>
+            <input type="password" placeholder="Digite a sua senha..." id="input_senha">
+
+            <a>Esqueceu a senha?</a>
+
+            <button id="botao_entrar_submit" class="botao_principal">Entrar</button>
+    
+            <hr>
+
+            <p>Não possui uma conta? Cadastre-se para acessar a plataforma!</p>
+
+            <button class="botao_inverso" id="botao_comecar_cadastro">Começar cadastro</button>
+        </div>
+
+        <div class="box_formulario" id="tela_cadastro1">
+            <label for="input_cadastro_username">Nome:</label>
+            <input type="text" placeholder="Digite um apelido..." id="input_cadastro_username">
+
+            <label for="input_cadastro_email">E-mail:</label>
+            <input type="email" placeholder="Digite o seu e-mail..." id="input_cadastro_email">
+
+            <label for="input_cadastro_senha">Senha:</label>
+            <input type="password" placeholder="Digite uma senha..." id="input_cadastro_senha">
+
+            <div class="box_input_selecionar">
+                <input type="checkbox" id="check_acordos_id" class="check_acordos">
+                <label for="check_acordos_id" class="legenda_acordo">Eu concordo com o <strong>Contrato do Usuário</strong>, a <strong>Política de Privacidade</strong> e a <strong>Política de Cookies</strong> da Plataforma.</label>
+                <img src="img/icones/checkSF.png" class="check_input_img">
+            </div>
+
+            <div class="box_botoes">
+                <button class="botao_inverso" id="botao_voltar_cadastro">Voltar</button>
+                <button class="botao_principal" id="botao_proximo_cadastro">Próximo</button>
+            </div>
+        </div>
+
+        <div class="box_formulario" id="tela_cadastro2">
+            <div class="box_cinza">
+                <label for="input_username_cad">Configure o seu usuário:</label>
+                <input type="text" placeholder="Digite um apelido..." maxlength="10" id="input_username_cad">
+                <div class="box_perfil">
+                    <div class="perfil_user">
+                        <img src="img/icones/perfil.png">
+                    </div>
+
+                    <div class="box_bts_tema1_cad">
+                        <!-- O value foi configurado em cadastro.js -->
+                        <input type="radio" name="escolha_tema1_perfil" id="bt_cor_1" class="bt_cor_cad" checked>
+                        <input type="radio" name="escolha_tema1_perfil" id="bt_cor_2" class="bt_cor_cad">
+                        <input type="radio" name="escolha_tema1_perfil" id="bt_cor_3" class="bt_cor_cad">
+                        <input type="radio" name="escolha_tema1_perfil" id="bt_cor_4" class="bt_cor_cad">
+                        <input type="radio" name="escolha_tema1_perfil" id="bt_cor_5" class="bt_cor_cad">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_cinza">
+                <label for="bt_motivo_1">Defina-se:</label>
+                <div class="box_bts_motivos_cad">
+                    <!-- O value precisa ser configurado em cadastro.js -->
+                    <input type="radio" name="escolha_motivo" id="bt_motivo_1" checked>
+                    <label for="bt_motivo_1" class="bt_motivo_cad">Designer</label>
+                    <input type="radio" name="escolha_motivo" id="bt_motivo_2">
+                    <label for="bt_motivo_2" class="bt_motivo_cad">Artista</label>
+                    <input type="radio" name="escolha_motivo" id="bt_motivo_3">
+                    <label for="bt_motivo_3" class="bt_motivo_cad">Ilustrador</label>
+                    <input type="radio" name="escolha_motivo" id="bt_motivo_4">
+                    <label for="bt_motivo_4" class="bt_motivo_cad">Por hobby</label>
+                    <input type="radio" name="escolha_motivo" id="bt_motivo_5">
+                    <label for="bt_motivo_5" class="bt_motivo_cad">Social media</label>
+                    <input type="radio" name="escolha_motivo" id="bt_motivo_6">
+                    <label for="bt_motivo_6" class="bt_motivo_cad">Curioso</label>
+                </div>
+            </div>
+
+            <div class="box_botoes" id="box_botoes_tela2">
+                <button class="botao_inverso" id="botao_voltar_cadastro2">Voltar</button>
+                <button class="botao_principal" id="botao_proximo_cadastro2">Próximo</button>
+            </div>
+        </div>
+
+        <div class="box_formulario" id="tela_cadastro3">
+            
+            <p>Confirme o seu cadastro requisitando um código para o seu e-mail (não o compartilhe):</p>
+
+            <button type="button" class="botao_principal">Enviar código de confirmação</button>
+
+            <input type="text" placeholder="Digite o código..." id="codigo_confirmacao">
+
+            <hr>
+
+            <div class="box_botoes">
+                <button class="botao_inverso" id="botao_voltar_cadastro3">Voltar</button>
+                <button class="botao_principal" id="botao_concluir_cadastro">Cadastrar</button>
+            </div>
+
+        </div>
+
+        <div class="box_formulario" id="tela_cadastro4">
+            <img id="logo_bem_vindo" src="img/geral/logo.png">
+            <h1>Seja bem vindo!</h1>
+            <p>Aproveite a plataforma e bons estudos!</p>
+        </div>
+    </form>
+
+    <script src="cadastro.js"></script>
+
+</body>

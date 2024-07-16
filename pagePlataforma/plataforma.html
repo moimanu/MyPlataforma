@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="plataforma.css">
+        <link rel="shortcut icon" href="../img/icones/icone.ico"/>
+        <title>Plataforma - Módulos</title>
+    </head>
+
+    <body class="body_plataforma">
+        <section id="loading" style="height: 100%; top: 0px; width: 100vw; position: absolute; z-index: 200; background-color: white; display: none; flex-direction: column; align-items: center; justify-content: center;">
+            <h1 style="color: #cccccc;">Redirecionando<h1>
+            <img style="height: 100px;" src="../img/geral/loading.gif">
+        </section>
+        
+        <section class="area1">
+            <header class="cabecalho_plataforma">
+                <a href="plataforma.html">
+                    <button id="cabecalho_bt_logo">
+                        <img class="cabecalho_logo_pc" src="../img/geral/logoPlataforma.png">
+                        <img class="cabecalho_logo_mobile" src="../img/geral/logo.png">
+                    </button>
+                </a>
+
+                <nav class="bts_navegacao">
+                    <button class="bt_nav" id="bt_nav_modulos"><img src="../img/icones/iconesNav/modulo.png"><p>Módulos de estudo</p></button>
+                    <button class="bt_nav" id="bt_nav_info"><img src="../img/icones/iconesNav/info.png"><p>Info</p></button>
+                    <button class="bt_nav" id="bt_nav_plus"><img src="../img/geral/plus.png"><p>Plataforma Plus</p></button>
+                    <button class="bt_nav" id="bt_nav_creditos"><img src="../img/icones/iconesNav/creditos.png"><p>Créditos</p></button>
+                    <button class="bt_nav" id="bt_nav_perfil"><img src="../img/icones/iconesNav/perfil.png"><p>Seu perfil</p></button>
+                </nav>
+            </header>
+        </section>
+
+        <div class="mask_area_menu"></div>
+
+        <section class="area_menu">
+            <div id="container_area_menu"></div>
+        </section>
+        <section class="area2">
+            <div class="container_area2">
+                <div class="descricao_area2">
+                    <div class="cabecalho_descricao_area2">
+                        <h1>Módulos</h1>
+                    </div>
+                    <strong><p class="texto_descricao_area2">Nessa seção, você tem acesso a todos os módulos do projeto.</p></strong>
+                    <p class="texto_descricao_area2">Fique a vontade para selecionar qualquer um, mas indicamos seguir a ordem estabelecida a seguir:</p>
+                </div>
+                <div class="buttons">
+                    <button class="button_modulo" id="btm1">
+                        <div class="status_modulo"><p>A cursar</p></div>
+                        <div class="bolinha_tematica_bt"></div>
+                        <h1 class="titulo_button_modulo">Tema1</h1>
+                    </button>
+                    <button class="button_modulo" id="btm2">
+                        <div class="status_modulo"><p>A cursar</p></div>
+                        <div class="bolinha_tematica_bt"></div>
+                        <h1 class="titulo_button_modulo">Tema2</h1>
+                    </button>
+                    <button class="button_modulo" id="btm3">
+                        <div class="status_modulo"><p>A cursar</p></div>
+                        <div class="bolinha_tematica_bt"></div>
+                        <h1 class="titulo_button_modulo">Tema3</h1>
+                    </button>
+                    <button class="button_modulo" id="btm4">
+                        <div class="status_modulo"><p>A cursar</p></div>
+                        <div class="bolinha_tematica_bt"></div>
+                        <h1 class="titulo_button_modulo">Tema4</h1>
+                    </button>
+                    <button class="button_modulo" id="btm5">
+                        <div class="status_modulo"><p>A cursar</p></div>
+                        <div class="bolinha_tematica_bt"></div>
+                        <h1 class="titulo_button_modulo">Tema5</h1>
+                    </button>
+                    <button class="button_modulo" id="btm6">
+                        <div class="status_modulo"><p>A cursar</p></div>
+                        <div class="bolinha_tematica_bt"></div>
+                        <h1 class="titulo_button_modulo">Tema6</h1>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="area3">
+            <div class="container_area3">
+                <button class="fechar_area3"><img src="../img/icones/voltar.png"></button>
+                <div class="box_area3">
+                    <h1 style="margin-bottom: 15px;">Seja muito bem vindo a plataforma!</h1>
+                    <p>Aqui na Plataforma você pode estudar no seu ritmo! Selecione um módulo para começar...</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="plataforma.js"></script>
+    </body>
+</html>
