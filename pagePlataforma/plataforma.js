@@ -50,7 +50,7 @@ if (!localStorage.getItem("userName")) {
                 <h2>Sobre a criação do site:</h2>
                 <p>A plataforma de estudos foi inteiramente criada por Moisés Emanuel, Tecnólogo em Design Gráfico e Bacharelando em Sistemas de Informação.</p>
                 <div id="perfil_creditos">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQEuYhK0jzFjNw/profile-displayphoto-shrink_400_400/0/1713390631788?e=1721865600&v=beta&t=S2Ckh7Yb_Up3YyOnYyD-pEILykU6x3oMNc8Dsh47FPM">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQEuYhK0jzFjNw/profile-displayphoto-shrink_100_100/0/1713390631788?e=1727913600&v=beta&t=B5FP68yf-3jKz2F8eQ4WKX-n3RpPt9CEVklo3IvHFHU">
                     <p>Moisés Emanuel</p>
                 </div>
             </div>
